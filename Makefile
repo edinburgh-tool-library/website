@@ -4,9 +4,9 @@
 CMPSR := $(if $(shell which composer), $(shell which composer), bin/composer)
 WPCLI := $(if $(shell which wp), $(shell which wp), bin/wp)
 
-.PHONY: composer wpcli install clean
+.PHONY: composer wpcli clean
 
-index.php: wpcli composer
+wp-content wp: wpcli composer
 	composer install
 
 tmp bin:
