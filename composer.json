@@ -1,0 +1,43 @@
+{
+	"name": "edinburgh-tool-library-website",
+  "authors": [
+    {
+      "name": "Thomas Bartels",
+      "email": "thomas@edinburghtoollibrary.org.uk"
+    }
+  ],
+	"type": "project",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+	],
+  "require": {
+    "php": ">=5.4",
+    "vlucas/phpdotenv": "^2.2",
+    "johnpbloch/wordpress": "*",
+    "wpackagist-plugin/posts-to-posts": "*",
+    "wpackagist-plugin/advanced-custom-fields": "*",
+		"wpackagist-plugin/wordpress-seo": "*",
+		"wpackagist-plugin/all-in-one-wp-security-and-firewall": "*",
+		"wpackagist-plugin/capability-manager-enhanced": "*",
+		"wpackagist-plugin/disable-comments": "*",
+		"wpackagist-plugin/duplicate-post": "*",
+		"wpackagist-plugin/gmail-smtp": "*",
+		"wpackagist-plugin/google-captcha": "*",
+		"wpackagist-plugin/siteorigin-panels": "*",
+		"wpackagist-plugin/so-widgets-bundle": "*",
+		"wpackagist-plugin/oauth-twitter-feed-for-developers": "*",
+		"wpackagist-plugin/regenerate-thumbnails": "*",
+		"wpackagist-plugin/simple-page-ordering": "*",
+		"wpackagist-plugin/threewp-activity-monitor": "*",
+		"wpackagist-plugin/typeform": "*",
+		"wpackagist-plugin/user-switching": "*",
+		"wpackagist-plugin/wired-impact-volunteer-management": "*",
+    "wpackagist-plugin/akismet": "*"
+  },
+  "extra": {
+    "wordpress-install-dir": "wp"
+  }
+}
