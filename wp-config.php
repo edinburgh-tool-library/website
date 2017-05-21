@@ -21,7 +21,7 @@ define( 'WP_DEBUG_DISPLAY', false );
 #define( 'SAVEQUERIES', true );
 #define( 'WP_DEBUG', true );
 
-// Grab salts: https://api.wordpress.org/secret-key/1.1/salt
+// BEGIN SALTS: https://api.wordpress.org/secret-key/1.1/salt
 define( 'AUTH_KEY',         'put your unique phrase here' );
 define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
 define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
