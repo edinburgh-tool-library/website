@@ -40,27 +40,28 @@ Thumbs.db
 node_modules/
 
 # ignore everything in the root except the "wp-content" directory.
-/*
-!wp-content/
+#/*
+#!wp-content/
 
 # ignore everything in the "wp-content" directory, except:
 # mu-plugins, plugins, and themes directories
-wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
+#wp-content/*
+#!wp-content/mu-plugins/
+#!wp-content/plugins/
+#!wp-content/themes/
 
 # ignore all mu-plugins, plugins, and themes
 # unless explicitly whitelisted at the end of this file
-wp-content/mu-plugins/*
-wp-content/plugins/*
-wp-content/themes/*
+#wp-content/mu-plugins/*
+#wp-content/plugins/*
+#wp-content/themes/*
 
 # -------------------------
 # BEGIN Whitelisted Files
 # -------------------------
 
 # some blacklisted stuff, just to be clear ...
+local-config.php
 .env
 
 # track these files, if they exist
@@ -74,11 +75,11 @@ wp-content/themes/*
 !wp-config.php
 
 # track favicon files, if they exist
-!android-chrome-*.png
-!apple-touch-icon*.png
-!browserconfig.xml
-!favicon*.png
-!favicon*.ico
-!manifest.json
-!mstile-*.png
-!safari-pinned-tab.svg
+#!android-chrome-*.png
+#!apple-touch-icon*.png
+#!browserconfig.xml
+#!favicon*.png
+#!favicon*.ico
+#!manifest.json
+#!mstile-*.png
+#!safari-pinned-tab.svg

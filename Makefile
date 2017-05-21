@@ -35,6 +35,7 @@ old-salts: | tmp
 clean:
 	-rm -rf vendor
 	-rm -rf bin
+	-rm -d tmp
 	-rm -rf wp
 	-rm -rf wp-content
 	-rm -f composer.lock
