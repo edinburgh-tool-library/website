@@ -6,7 +6,7 @@ WPCLI := $(if $(shell which wp), $(shell which wp), bin/wp)
 
 .PHONY: composer wpcli clean old-salts
 
-wp wp-content vendor: wpcli composer
+wp wp-content vendor: wpcli composer wp-salts.php
 	composer install
 
 tmp bin:

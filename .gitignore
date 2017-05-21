@@ -36,8 +36,10 @@ Thumbs.db
 *.tar
 *.zip
 
-# ignore node dependency directories (used by grunt)
+# ignore dependency directories
 node_modules/
+bower_components/
+vendor/
 
 # ignore everything in the root except the "wp-content" directory.
 #/*
@@ -56,23 +58,28 @@ node_modules/
 #wp-content/plugins/*
 #wp-content/themes/*
 
+# some blacklisted stuff, just to be clear ...
+local-config.php
+.env
+composer.lock
+wp-salts.php
+bin/
+wp/
+wp-content/
+
 # -------------------------
 # BEGIN Whitelisted Files
 # -------------------------
 
-# some blacklisted stuff, just to be clear ...
-local-config.php
-.env
-
 # track these files, if they exist
-!.gitignore
-!.editorconfig
-!.env.tpl
-!README.md
-!CHANGELOG.md
-!composer.json
-!Makefile
-!wp-config.php
+#!.gitignore
+#!.editorconfig
+#!.env.tpl
+#!README.md
+#!CHANGELOG.md
+#!composer.json
+#!Makefile
+#!wp-config.php
 
 # track favicon files, if they exist
 #!android-chrome-*.png
